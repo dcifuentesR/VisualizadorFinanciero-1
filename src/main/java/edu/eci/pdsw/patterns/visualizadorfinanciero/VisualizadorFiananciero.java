@@ -40,7 +40,7 @@ public class VisualizadorFiananciero {
         
         //Se espera poder visualizar ESTOS datos:
              
-        System.out.println("DATOS QUE NO SE HAN PODIDO VISUALIZAR GRÁFICAMENTE:");
+        System.out.println("DATOS QUE NO SE HAN PODIDO VISUALIZAR GRAFICAMENTE:");
         
         DataExtractor dext=new DataExtractor();
         Enumeration<Double> data=dext.extractDataFromBigData();
