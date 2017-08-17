@@ -35,7 +35,7 @@ public class VisualizadorFiananciero {
         
         //Procesar datos dados por el iterador de la fuente de datos
         dana.processData(defaultDataSource.getCurrentData());
-        
+       
         
         
         //Se espera poder visualizar ESTOS datos:
@@ -44,6 +44,7 @@ public class VisualizadorFiananciero {
         
         DataExtractor dext=new DataExtractor();
         Enumeration<Double> data=dext.extractDataFromBigData();
+        dana.processData(new EnumerationAdapter(data));
         
         while (data.hasMoreElements()){
             System.out.println(data.nextElement());
